@@ -3,13 +3,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'echo "Jenkins hello makara"' 
                 sh 'mvn --version'
             }
         }
-        stage('Hello World') {
-            steps {
-                sh 'echo "Jenkins hello makara"'
-            }
-        }
+        
+             
     }
 }
